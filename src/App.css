@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background: linear-gradient(#1b00ffd6, #673ab782);
+}
+.container {
+    padding: 10px;
+}
+article {
+    max-width: 350px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 10px;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first-field,
+.second-field {
+    margin: 10px 0;
+}
+.first-field-numbers,
+.second-field-numbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto,50px));
+}
+.cell {
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5em;
+    text-align: center;
+}
+.selected {
+    background: gold;
+}
+.cell:hover {
+    background: #def;
+    cursor: pointer;
+}
+.selected:hover {
+    background: #ffee46;
+}
+p {
+    font-size: 24px;
+}
+.magic-button {
+  width: 32px;
+  height: 32px;
+  background: transparent url(/icons.png) no-repeat;
+    border: 1px solid #fff;
+  background-position-x: -547px;
+  border-radius: 3px;
+  justify-self: end;
+}
+.magic-button:hover {
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.button {
+    text-align: center;
+    padding: 20px;
+}
+button {
+    font-size: 24px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    background: #fff;
+}
+button:hover {
+    background: #eaffd1;
+    cursor: pointer;
+}
+button.disabled:hover {
+    background: #fff;
+    cursor: not-allowed;
+}
